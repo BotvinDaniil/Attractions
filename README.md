@@ -1,1 +1,1 @@
-# Attractions
+Attractions application with three screens Gallery, Camera and Map. (works with Permissions, Retrofit, Camera X, Room, Yandex Map Kit, Dagger/Hilt dependencies). The application allows the user to find nearby attractions, take photos of them and save them.
