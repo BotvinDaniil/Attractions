@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "682270763386",
+    "project_id": "my-first-firebase-projec-7f43b",
+    "storage_bucket": "my-first-firebase-projec-7f43b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:682270763386:android:de1fe0994ec634a336cec3",
+        "android_client_info": {
+          "package_name": "com.example.attractions"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBUxHitpqlLWH6eD6XsljY8iGOyir7ya7U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

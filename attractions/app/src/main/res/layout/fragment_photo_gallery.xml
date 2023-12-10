@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".presentation.uiphotogalleryfragment.PhotoGalleryFragment">
+
+    <FrameLayout
+        android:id="@+id/describe_frame"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:background="#1A659E"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/recycler">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="26sp"
+            android:textColor="@color/white"
+            android:text="@string/main_text"/>
+
+    </FrameLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+        app:layout_constraintBottom_toTopOf="@+id/to_firebase_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/describe_frame"
+        app:spanCount="2" />
+
+
+    <Button
+        android:id="@+id/make_photo_button"
+        android:backgroundTint="#1A659E"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textSize="20sp"
+        android:text="@string/make_a_new_photo"
+        app:layout_constraintBottom_toTopOf="@id/to_map_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/to_map_button"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="@string/open_map"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:backgroundTint="#1A659E"/>
+
+    <Button
+        android:id="@+id/to_firebase_button"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="@string/open_firebase_button"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@id/make_photo_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:backgroundTint="#1A659E"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

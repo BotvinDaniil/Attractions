@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">attractions</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="make_photo_button">Make Photo</string>
+    <string name="back_to_gallery_button">Back to Gallery</string>
+    <string name="photo_from_rover">Photo from camera</string>
+    <string name="earthdate">Date of photo</string>
+    <string name="main_text">My Photos</string>
+    <string name="make_a_new_photo">Make a new photo</string>
+    <string name="back_to_gallery">Back to Gallery</string>
+    <string name="open_map">Open map</string>
+    <string name="plus">+</string>
+    <string name="minus">-</string>
+    <string name="x_button">X</string>
+    <string name="name_on_card">Название: %1$s</string>
+    <string name="address_on_card">Адрес:
+        Город: %1$s,
+        Улица: %2$s,
+        Дом: %3$s </string>
+    <string name="type_on_card">Тип памятника: %1$s</string>
+    <string name="coordinates_on_card">Координаты:
+        Широта %1$s,
+        Долгота %2$s</string>
+    <string name="current_location_symbol">current_location_symbol</string>
+    <string name="non_critical_button_name">Make non critical_error</string>
+    <string name="make_critical_error_button_name">make critical error</string>
+    <string name="open_firebase_button">Open Firebase</string>
+    <string name="notification_button_text">Create Notification</string>
+
+
+</resources>

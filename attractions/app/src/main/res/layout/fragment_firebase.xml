@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".presentation.uifirebasefragment.FirebaseFragment">
+
+    <Button
+        android:id="@+id/make_non_critical_error_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/non_critical_button_name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="20dp"
+        android:backgroundTint="#1A659E"
+        app:layout_constraintBottom_toTopOf="@id/make_critical_error_button"/>
+
+    <Button
+        android:id="@+id/make_critical_error_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="@string/make_critical_error_button_name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:backgroundTint="#1A659E"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <Button
+        android:id="@+id/back_to_gallery_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#1A659E"
+        android:text="@string/back_to_gallery"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="15dp"
+        />
+
+    <Button
+        android:id="@+id/notification_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#1A659E"
+        android:text="@string/notification_button_text"
+        app:layout_constraintBottom_toTopOf="@id/back_to_gallery_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="15dp"
+        />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/photoGalleryFragment">
+    <fragment
+        android:id="@+id/photoGalleryFragment"
+        android:name="com.example.attractions.presentation.uiphotogalleryfragment.PhotoGalleryFragment"
+        android:label="fragment_photo_gallery"
+        tools:layout="@layout/fragment_photo_gallery" >
+        <action
+            android:id="@+id/action_photoGalleryFragment_to_makePhotoFragment"
+            app:destination="@id/makePhotoFragment" />
+        <action
+            android:id="@+id/action_photoGalleryFragment_to_mapFragment"
+            app:destination="@id/mapFragment" />
+        <action
+            android:id="@+id/action_photoGalleryFragment_to_firebaseFragment"
+            app:destination="@id/firebaseFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/makePhotoFragment"
+        android:name="com.example.attractions.presentation.uimakephotofragment.MakePhotoFragment"
+        android:label="fragment_make_photo"
+        tools:layout="@layout/fragment_make_photo" >
+        <action
+            android:id="@+id/action_makePhotoFragment_to_photoGalleryFragment"
+            app:destination="@id/photoGalleryFragment" />
+        <action
+            android:id="@+id/action_makePhotoFragment_to_mapFragment"
+            app:destination="@id/mapFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/mapFragment"
+        android:name="com.example.attractions.presentation.uimapfragment.MapFragment"
+        android:label="fragment_map"
+        tools:layout="@layout/fragment_map" >
+        <action
+            android:id="@+id/action_mapFragment_to_makePhotoFragment"
+            app:destination="@id/makePhotoFragment" />
+        <action
+            android:id="@+id/action_mapFragment_to_photoGalleryFragment"
+            app:destination="@id/photoGalleryFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/firebaseFragment"
+        android:name="com.example.attractions.presentation.uifirebasefragment.FirebaseFragment"
+        android:label="fragment_firebase"
+        tools:layout="@layout/fragment_firebase" >
+        <action
+            android:id="@+id/action_firebaseFragment_to_photoGalleryFragment"
+            app:destination="@id/photoGalleryFragment" />
+    </fragment>
+</navigation>
